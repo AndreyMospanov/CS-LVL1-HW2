@@ -1,0 +1,6 @@
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\bin\Debug\Task 5.exe.config
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\bin\Debug\Task 5.exe
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\bin\Debug\Task 5.pdb
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\obj\Debug\Task 5.csprojAssemblyReference.cache
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\obj\Debug\Task 5.exe
+C:\Программирование\-=GB=-\C# уровень 1\Task 5\obj\Debug\Task 5.pdb
