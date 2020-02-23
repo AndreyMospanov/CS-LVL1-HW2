@@ -1,0 +1,6 @@
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\bin\Debug\Task 4.exe.config
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\bin\Debug\Task 4.exe
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\bin\Debug\Task 4.pdb
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\obj\Debug\Task 4.csprojAssemblyReference.cache
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\obj\Debug\Task 4.exe
+C:\Программирование\-=GB=-\C# уровень 1\Lesson 2 Homework\Task 4\obj\Debug\Task 4.pdb

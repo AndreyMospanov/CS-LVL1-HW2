@@ -1,0 +1,87 @@
+[1mdiff --git a/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/.suo b/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/.suo[m
+[1mindex f029f08..c0fea2a 100644[m
+Binary files a/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/.suo and b/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/.suo differ
+[1mdiff --git a/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/Server/sqlite3/storage.ide b/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/Server/sqlite3/storage.ide[m
+[1mindex 1eb18bf..00c2606 100644[m
+Binary files a/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/Server/sqlite3/storage.ide and b/Lesson 2 Homework/.vs/Lesson 2 Homework/v16/Server/sqlite3/storage.ide differ
+[1mdiff --git a/Task 4/Program.cs b/Task 4/Program.cs[m
+[1mindex 451ef66..cbe3f2a 100644[m
+[1m--- a/Task 4/Program.cs[m	
+[1m+++ b/Task 4/Program.cs[m	
+[36m@@ -11,7 +11,71 @@[m [mnamespace Task_4[m
+         //написать программу: пользователь вводит логин и пароль, программа пропускает его дальше или[m
+         //не пропускает.С помощью цикла do while ограничить ввод пароля тремя попытками.[m
+     {[m
+[31m-      [m
+[31m-      [m
+[32m+[m[32m        static bool Log(string login)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (login == "root")[m
+[32m+[m[32m            { return true; }[m
+[32m+[m[32m            else { return false; }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        static bool Pass(string password)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (password == "GEEKBRAINS")[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return true;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return false;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        static void Main(string[] args)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            #region логин пароль без ограничения попыток[m
+[32m+[m[32m            //int count = 0;//Количество попыток[m
+[32m+[m[32m            //string login;[m
+[32m+[m[32m            //string password;[m
+[32m+[m[32m            //do[m
+[32m+[m[32m            //{[m
+[32m+[m[32m            //    WriteLine("Введите Логин");[m
+[32m+[m[32m            //    login = ReadLine();[m
+[32m+[m[32m            //    WriteLine("Введите Пароль");[m
+[32m+[m[32m            //    password = ReadLine();[m
+[32m+[m[32m            //    count++;[m
+[32m+[m[32m            //}[m
+[32m+[m[32m            //while (  password != "GEEKBRAINS" || login != "root");[m
+[32m+[m[32m            //WriteLine($"Добро пожаловать в систему, У вас было {count} попыток");[m
+[32m+[m[32m            //Pause();[m
+[32m+[m[32m            #endregion[m
+[32m+[m
+[32m+[m[32m            int count=0;[m
+[32m+[m[32m            string login;[m
+[32m+[m[32m            string password;[m
+[32m+[m[32m            do[m
+[32m+[m[32m            {[m
+[32m+[m[32m                WriteLine("Введите Логин");[m
+[32m+[m[32m                login = ReadLine();[m
+[32m+[m[32m                Log(login);[m
+[32m+[m[32m                WriteLine("Введите Пароль");[m
+[32m+[m[32m                password = ReadLine();[m
+[32m+[m[32m                Pass(password);[m
+[32m+[m[32m                count++;[m
+[32m+[m[32m                if (Log(login) == true && Pass(password) == true)[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    WriteLine("Добро пожаловать в систему");[m
+[32m+[m[32m                    break;[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[32m            while (count < 3);[m
+[32m+[m[32m            if (count == 3)[m
+[32m+[m[32m            {[m[41m [m
+[32m+[m[32m                WriteLine("Превышено количество попыток");[m[41m [m
+[32m+[m[32m            }[m
+[32m+[m[32m            Pause();[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+     }[m
+ }[m
+[1mdiff --git a/Task 4/obj/Debug/Task 4.csprojAssemblyReference.cache b/Task 4/obj/Debug/Task 4.csprojAssemblyReference.cache[m
+[1mindex 24df8ab..215ea7b 100644[m
+Binary files a/Task 4/obj/Debug/Task 4.csprojAssemblyReference.cache and b/Task 4/obj/Debug/Task 4.csprojAssemblyReference.cache differ
